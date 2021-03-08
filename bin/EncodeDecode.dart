@@ -9,7 +9,7 @@ enum ePacketize { encode, decode }
 void main(List<String> arguments) {
   List<int> data = [45, 87, 12];
   Uint8List bytes = Uint8List.fromList(data);
-
+//
   print('Original: $bytes');
   Uint8List EncodedMsg = msgPacket(bytes, ePacketize.encode);
 
